@@ -1,8 +1,4 @@
-%-------------------------
-% Resume in Latex
-% Author : Jake Gutierrez
-% License : MIT
-%------------------------
+
 
 \documentclass[letterpaper,11pt]{article}
 
