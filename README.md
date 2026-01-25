@@ -1,2 +1,207 @@
-# resume
-Resume
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}
+  {\vspace{-4pt}\scshape\raggedright\large}
+  {}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{#1\vspace{-2pt}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Igor Janotti} \\ \vspace{1pt}
+  \small (425)~638--3519 $|$
+    \href{mailto:IgorJ1@live.com}{IgorJ1@live.com} $|$
+  \href{https://github.com/IgorJanGit}{github.com/IgorJanGit}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+Computer science student and software engineer with experience in full-stack development, cloud computing, and open-source contributions. Former Software Engineer Intern at Pacific Northwest National Laboratory (Department of Energy) with a strong interest in scalable systems, cloud infrastructure, and collaborative engineering environments.
+%-----------SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+  \item{
+    \textbf{Languages}: Java, Python, C, C++, C\#, JavaScript, TypeScript \\
+    \textbf{Technologies}: AWS, Docker, Node.js, Git, MySQL, MongoDB \\
+    \textbf{Concepts}: Object-Oriented Programming, Data Structures, Algorithms, Full-Stack Development
+  }
+}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Pacific Northwest National Laboratory (Department of Energy)}{Jun 2025 -- May 2026}
+    {Software Engineer Intern}{}
+    \resumeItemListStart
+      \resumeItem{Contributed to VOLTTRON Eclipse, an open-source, agent-based platform for distributed energy and building systems.}
+      \resumeItem{Worked with modular, event-driven architectures to improve scalability and system reliability.}
+      \resumeItem{Collaborated with researchers and engineers in an Agile environment.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Bellevue College}{Feb -- Mar 2024}
+    {Teaching Assistant -- Programming Languages (C++)}{}
+    \resumeItemListStart
+      \resumeItem{Supported students with C++, CMake, Google Test, Ninja, and GitHub Actions.}
+      \resumeItem{Reviewed code, assisted with debugging, and reinforced core programming concepts.}
+      \resumeItem{Helped students understand testing, compilation pipelines, and version control.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {CodeDay}{Nov -- Dec 2024}
+    {Micro Intern -- Appwrite}{Remote}
+    \resumeItemListStart
+      \resumeItem{Translated Node.js templates to Python for Appwrite, an open-source backend platform with 75K+ monthly users.}
+      \resumeItem{Converted GitHub Issue Bot template to Python, expanding platform support.}
+      \resumeItem{Led peer code reviews and contributed to documentation standardization.}
+      \resumeItem{Acted as Scrum Master, facilitating sprint planning and retrospectives.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {CodeDay -- Open Energy Dashboard}{Jan -- Feb 2024}
+    {Micro Intern}{Remote}
+    \resumeItemListStart
+      \resumeItem{Developed automated function tests using Mocha and Chai for an existing production codebase.}
+      \resumeItem{Used Docker for containerization and GitHub for collaboration and CI workflows.}
+      \resumeItem{Gained experience working with unfamiliar technologies and large-scale repositories.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{Volttron eclipse } $|$ \emph{C++, Python, JavaScript}}{}
+        \resumeItemListStart
+          \resumeItem{Developed a companion robot featuring mapping, pathfinding, and obstacle avoidance.}
+          \resumeItem{Worked across frontend, backend, and database components.}
+          \resumeItem{Planned migration to ROS2 for improved robotics integration.}
+        \resumeItemListEnd
+    
+
+  \resumeProjectHeading
+    {\textbf{FollowBot Companion Robot} $|$ \emph{C++, Python, JavaScript}}{}
+    \resumeItemListStart
+      \resumeItem{Developed a companion robot featuring mapping, pathfinding, and obstacle avoidance.}
+      \resumeItem{Worked across frontend, backend, and database components.}
+      \resumeItem{Planned migration to ROS2 for improved robotics integration.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{AWS License Plate Recognition System} $|$ \emph{C\#, AWS}}{}
+    \resumeItemListStart
+      \resumeItem{Built an automated fine-processing system using AWS Rekognition, Lambda, DynamoDB, and SNS.}
+      \resumeItem{Enabled real-time email notifications for detected license plates.}
+    \resumeItemListEnd
+
+  \resumeProjectHeading
+    {\textbf{Food Item Expiration Tracker} $|$ \emph{Python}}{}
+    \resumeItemListStart
+      \resumeItem{Designed a database-driven system to track food expiration dates.}
+      \resumeItem{Implemented email alerts with plans for background service deployment.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Bellevue College}{Bellevue, WA}
+    {Bachelor of Science in Computer Science}{2023 -- Spring 2025}
+    \resumeItemListStart
+      \resumeItem{GPA: 3.54}
+      \resumeItem{Relevant Coursework: Software Engineering, Cloud Computing, Data Structures, Algorithms, Database Systems}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Bellevue College}{Bellevue, WA}
+    {Associate of Arts \& Science}{2019 -- 2023}
+    \resumeItemListStart
+      \resumeItem{GPA: 3.69}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section{Awards \& Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+  \item{
+    \textbf{Awards}: NEXTGEN Startup Challenge (2nd Place), Ready Tensor Computer Vision Expo 2024 (Most Promising Innovation), GameJam Bellevue College (Best Mechanics) \\
+    \textbf{Certification}: Git
+  }
+}
+\end{itemize}
+
+\end{document}
